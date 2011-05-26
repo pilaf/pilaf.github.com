@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="prototype.js"></script>
+  <script src="effects.js"></script>
+  <script src="slideglide.js"></script>
+  <link rel="stylesheet" href=slideglide.css">
+  <style>
+  <!--
+    #wrapper {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    #controls {
+      margin-top: 5px;
+      font-family: arial, sans-serif;
+      font-size: 16px;
+      overflow: hidden;
+    }
+
+    #controls a {
+      padding: 5px;
+      background: silver;
+      color: white;
+    }
+
+    #controls a:hover {
+      background: gray;
+    }
+
+    #controls .prev {
+      float: left;
+    }
+
+    #controls .next {
+      float: right;
+    }
+
+    #slideshow {
+      height: 300px;
+      position: relative;
+      border: 1px solid silver;
+    }
+
+    #slideshow img {
+      margin: 0 5px;
+    }
+  -->
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="slideshow"></div>
+    <div id="controls">
+      <a href="#" class="prev" onclick="slideshow.prevImage(); return false;">Prev</a>
+      <a href="#" class="next" onclick="slideshow.nextImage(); return false;">Next</a>
+    </div>
+  </div>
+  <script><!--
+    var images = [['images/1-thumb.jpg', 'images/1-full.jpg'], ['images/2-thumb.jpg', 'images/2-full.jpg'], ['images/3-thumb.jpg', 'images/3-full.jpg'], ['images/4-thumb.jpg', 'images/4-full.jpg']];
+
+    slideshow = new Slideglide('slideshow', images, {
+      onCreateImage: function(image) {
+      }
+    });
+  --></script>
+</body>
+</html>
